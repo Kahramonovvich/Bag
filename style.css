@@ -1,0 +1,586 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.btnBg {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: rgba(255, 255, 255, 1);
+	background: rgba(245, 155, 0, 1);
+	border-radius: 5px;
+	border: none;
+	padding: 15px 30px;
+	text-transform: capitalize;
+}
+
+p.textBg {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: rgba(245, 155, 0, 1);
+}
+
+p.text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	color: rgba(255, 255, 255, .7);
+	text-transform: capitalize;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2.title {
+	font-weight: 700;
+	font-size: 31px;
+	line-height: 43px;
+	text-transform: capitalize;
+	color: rgba(47, 47, 47, 1);
+}
+
+/* ----------------------------------------------------------------- Header start ----------------------------------------------------------------- */
+
+header {
+	background: rgba(47, 47, 47, 1);
+}
+
+header .navbar {
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+
+header .navbar .navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+
+header .navbar .navbar-collapse {
+	justify-content: flex-end;
+}
+
+header .navbar .navbar-collapse .navbar-nav {
+	align-items: center;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) {
+	margin-left: 40px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item:last-of-type {
+	margin-left: 90px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+	padding: 0;
+	color: rgba(255, 255, 255, .6);
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+	color: rgba(255, 255, 255, 1);
+}
+
+header .header-title {
+	background: url("./img/background image.png") no-repeat top right;
+}
+
+header .header-title .textBg {
+	margin-bottom: 10px;
+	margin-top: 120px;
+}
+
+header .header-title h1 {
+	font-weight: 700;
+	font-size: 61px;
+	line-height: 79px;
+	margin-bottom: 25px;
+	color: rgba(255, 255, 255, 1);
+}
+
+header .header-title h1 span {
+	background: url("./img/download.png") no-repeat center / cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+header .header-title .text {
+	margin-bottom: 35px;
+}
+
+header .header-title .col-lg-4 {
+	position: relative;
+}
+
+header .header-title .cta {
+	position: absolute;
+	bottom: 120px;
+	left: 225px;
+}
+
+/* ----------------------------------------------------------------- Header end ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- Main start ----------------------------------------------------------------- */
+
+main {
+	margin-top: 130px;
+}
+
+main .carousel .carousel-inner .carousel-item .cardItem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(163, 163, 163, .5);
+	border-radius: 10px;
+	margin: auto;
+	height: 310px;
+}
+
+main .carousel .carousel-inner .carousel-item .top {
+	margin-bottom: 45px;
+}
+
+main .carousel .carousel-inner .carousel-item .top::after {
+	position: relative;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: rgba(245, 155, 0, .1);
+}
+
+main .carousel .carousel-inner .carousel-item .top.active::after {
+	height: 5px;
+	background: rgba(245, 155, 0, 1);
+	border-radius: 3px;
+}
+
+main .carousel .carousel-inner .carousel-item .top p {
+	text-align: center;
+	margin-bottom: 40px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: rgba(47, 47, 47, .8);
+	text-transform: capitalize;
+}
+
+main .carousel .carousel-inner .carousel-item .top.active p {
+	font-weight: 600;
+}
+
+/* ----------------------------------------------------------------- Main end ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- About start ----------------------------------------------------------------- */
+
+.about {
+	margin-top: 130px;
+	padding-top: 75px;
+	padding-bottom: 80px;
+	background: url("./img/background.svg") no-repeat;
+}
+
+.about .textBg {
+	margin-bottom: 10px;
+}
+
+.about p.text {
+	margin-top: 25px;
+	margin-bottom: 35px;
+	color: rgba(47, 47, 47, .9);
+}
+
+.about h2.title {
+	margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------------- About end ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- Product start ----------------------------------------------------------------- */
+
+.product {
+	margin-top: 130px;
+	text-align: center;
+}
+
+.product p {
+	color: rgba(47, 47, 47, .9);
+	margin-bottom: 60px;
+}
+
+.product .row:nth-child(2) {
+	row-gap: 110px;
+}
+
+.product .img {
+	position: relative;
+	height: 275px;
+	background: rgba(255, 225, 232, 1);
+	border-radius: 10px;
+}
+
+.product .img img {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.product button {
+	border: 1px solid rgba(245, 155, 0, 0.2);
+	padding: 15px 30px;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	background: none;
+	color: rgba(245, 155, 0, 1);
+	text-transform: capitalize;
+	margin-top: 125px;
+}
+
+.product button svg {
+	margin-left: 10px;
+}
+
+/* ----------------------------------------------------------------- Product end ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- Cta start ----------------------------------------------------------------- */
+
+.cta {
+	margin-top: 130px;
+}
+
+.cta .img {
+	position: relative;
+	background: rgba(47, 47, 47, 0.6);
+	border-radius: 10px 0px 0px 10px;
+
+}
+
+.cta .img img {
+	position: relative;
+	z-index: -1;
+	width: 100%;
+}
+
+.cta .bgColor {
+	position: relative;
+	z-index: 1;
+	border-radius: 10px;
+	background-color: rgba(47, 47, 47, 0.95);
+}
+
+.cta .left {
+	background: url("./img/ctabg.png") no-repeat center / cover;
+	padding: 105px 70px;
+}
+
+.cta .left h2 {
+	color: white;
+	margin-bottom: 0;
+}
+
+.cta .left form {
+	margin-top: 45px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cta .left form input {
+	background: none;
+	border: 1px solid rgba(255, 255, 255, .25);
+	border-radius: 10px;
+	padding: 18px 30px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: rgba(255, 255, 255, .35);
+	width: 45%;
+}
+
+.cta .left form input:focus-visible {
+	outline: none;
+}
+
+.cta .left form .email {
+	position: relative;
+	right: 0;
+}
+
+.cta .left form .address {
+	width: 100%;
+	padding: 18px 40px;
+	margin-top: 30px;
+}
+
+.cta .left .bottom {
+	display: flex;
+	align-items: center;
+}
+
+.cta .left .bottom p {
+	margin-bottom: 0;
+	margin-left: 9px;
+	margin-right: 50px;
+}
+
+/* ----------------------------------------------------------------- Cta end ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- Social start ----------------------------------------------------------------- */
+
+.social {
+	margin-top: 130px;
+	margin-bottom: 130px;
+}
+
+.social img {
+	width: 100%;
+}
+
+/* ----------------------------------------------------------------- Social end ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- Footer start ----------------------------------------------------------------- */
+
+footer {
+	background: rgba(47, 47, 47, 0.92);
+	padding: 100px 0;
+}
+
+footer .text {
+	line-height: 24px;
+	margin-bottom: 0;
+	margin-top: 20px;
+	text-transform: none;
+}
+
+footer .textBg {
+	color: rgba(255, 255, 255, 1);
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li:not(:last-of-type) {
+	margin-bottom: 10px;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, .7);
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+footer form {
+	margin-top: 25px;
+}
+
+footer form input {
+	width: 100%;
+	padding: 12px 20px;
+	font-weight: 400;
+	font-size: 16px;
+	background: none;
+	border: 1px solid rgba(176, 169, 169, .35);
+	border-radius: 5px;
+	color: rgba(255, 255, 255, .35);
+	margin-bottom: 30px;
+}
+
+footer form input:focus-visible {
+	outline: none;
+}
+
+footer form input::placeholder {
+	text-transform: capitalize;
+}
+
+/* ----------------------------------------------------------------- Footer end ----------------------------------------------------------------- */
+
+/* Media screen */
+
+@media (max-Width:1399px) {
+	header .header-title .cta {
+		bottom: 0px;
+		left: 210px;
+	}
+}
+
+@media (max-width:1199px) {
+
+	header .header-title .row {
+		align-items: center;
+	}
+
+	header .header-title .cta {
+		bottom: -20px;
+		left: 200px;
+	}
+
+	header .header-title .textBg {
+		margin-top: 0;
+	}
+
+	.cta .bgColor .col-lg-7 {
+		display: flex;
+		align-items: center;
+	}
+
+	.cta .left {
+		padding: 0px 70px;
+	}
+}
+
+@media (max-width:991px) {
+	header .navbar .navbar-toggler {
+		padding: 0;
+	}
+
+	header .navbar .navbar-toggler:focus {
+		box-shadow: none;
+	}
+
+	header .navbar .navbar-collapse .navbar-nav {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	header .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) {
+		margin-bottom: 10px;
+	}
+
+	header .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-of-type),
+	header .navbar .navbar-collapse .navbar-nav .nav-item:last-of-type {
+		margin-left: 0;
+	}
+
+	header .header-title .cta {
+		display: none;
+	}
+
+	header .header-title .textBg {
+		margin-top: 0;
+	}
+
+	header .header-title h1 {
+		font-size: 44px;
+		line-height: 59px;
+	}
+
+	main .row:nth-of-type(2) {
+		row-gap: 30px;
+	}
+
+	main .carousel .carousel-inner .carousel-item .top {
+		margin-bottom: 25px;
+	}
+
+	main .carousel .carousel-inner .carousel-item .top p {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	main .carousel .carousel-inner .carousel-item .top.active::after {
+		height: 3px;
+	}
+
+	.cta .left {
+		padding: 0 10px;
+	}
+
+	.cta .left form {
+		margin: 5px 0;
+	}
+
+	section.social {
+		margin: 15px 0;
+	}
+
+	footer .row {
+		row-gap: 20px;
+	}
+}
+
+@media (max-width:768px) {
+
+	main,
+	section.product,
+	section.about {
+		margin-top: 60px;
+	}
+
+	.cta .bgColor {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cta .left {
+		padding: 10px 10px;
+	}
+
+	.cta .img {
+		margin-top: 5px;
+	}
+
+	.cta .img img {
+		border-radius: 10px;
+	}
+}
+
+@media (max-width:576px) {
+
+	header .header-title {
+		margin-top: 10px;
+	}
+
+	.cta .bgColor {
+		padding: 0 5px;
+	}
+
+	.cta .left {
+		padding: 0;
+	}
+
+	.cta .left h2 {
+		font-size: 24px;
+		line-height: 33px;
+	}
+
+	.cta .left button {
+		white-space: nowrap;
+	}
+
+	.cta .left .bottom p {
+		margin-left: 5px;
+		margin-right: 0px;
+	}
+
+	footer {
+		padding: 30px 0;
+	}
+}
